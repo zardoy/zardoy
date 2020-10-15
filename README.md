@@ -1,7 +1,7 @@
-### Hi there 👋
+[![spotify](https://img.shields.io/static/v1?label=zardo96&logo=Spotify&message=%20)](https://open.spotify.com/user/zardo96)
 
-One of the best things in da world:
-- https://www.npmjs.com/package/react-player
+
+Things that I love: [React Player](https://www.npmjs.com/package/react-player) &middot; [Framer Motion](https://www.framer.com/api/motion/) (rly good docs)
 
 <!--
 **zardoy/zardoy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
