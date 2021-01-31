@@ -1,10 +1,10 @@
 [![spotify](https://img.shields.io/static/v1?label=zardo96&logo=Spotify&message=%20)](https://open.spotify.com/user/zardo96)
 
+[Use TypeScript everywhere](https://basarat.gitbook.io/typescript/getting-started/why-typescript#the-typescript-type-system), no `.js` files anymore! 
 
-Things that I love: [React Player](https://www.npmjs.com/package/react-player) &middot; [Framer Motion](https://www.framer.com/api/motion/) (rly good docs)
+⚡My mini awesome list: [React Player](https://www.npmjs.com/package/react-player) &middot; [Framer Motion](https://www.framer.com/api/motion/)
 
 <!--
-**zardoy/zardoy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
