@@ -12,5 +12,5 @@ jobs:
         uses: notiz-dev/github-action-json-property@release
         with:
             path: 'repos.json'
-            prop_path: 'npm-packages'
+            prop_path: 'test'
       - run: echo ${{steps.version.outputs.prop}}
