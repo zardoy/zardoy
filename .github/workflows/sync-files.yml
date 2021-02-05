@@ -1,0 +1,15 @@
+name: Sync Files
+on:
+  push:
+    branches: [master]
+jobs:
+  test-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with:
+            path: 'repos.json'
+            prop_path: 'npm-packages'
+      - run: echo ${{steps.version.outputs.prop}}
