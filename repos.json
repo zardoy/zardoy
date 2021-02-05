@@ -1,0 +1,26 @@
+{
+    "npm-packages": {
+        "color": "blue",
+        "repos": [
+            "vk-params",
+            "read-browser-tabs",
+            "craco-electron",
+            "world-to-world"
+        ]
+    },
+    "electron-apps": {
+        "repos": [
+            "advanced-youtube-downloader",
+            "filmomania",
+            "electron-tray-demo",
+            "auto-audio-device-select"
+        ]
+    },
+    "websites": {
+        "repos": [
+            "zardoy-site",
+            "tell-tale-about-borow",
+            "ggworlds.ru"
+        ]
+    }
+}
