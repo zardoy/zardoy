@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: zardoy/sync-all
         with:
-          - config_file: repos.json
-          - github_token: ${{ secrets.sync_github_token }}
+          config_file: repos.json
+          github_token: ${{ secrets.sync_github_token }}
       # - uses: actions/checkout@v2
       # - name: get version
       #   id: version
