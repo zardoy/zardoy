@@ -6,11 +6,11 @@ jobs:
   test-echo:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: zardoy/sync-all@main
         with:
           config_file: repos.json
           github_token: ${{ secrets.sync_github_token }}
-      # - uses: actions/checkout@v2
       # - name: get version
       #   id: version
       #   uses: notiz-dev/github-action-json-property@release
