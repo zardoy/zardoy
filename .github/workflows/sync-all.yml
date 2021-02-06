@@ -11,6 +11,7 @@ jobs:
         with:
           config_file: repos.json
           github_token: ${{ secrets.sync_github_token }}
+          commit_message: 'repos-sync: update files from %"SRC_REPO"%'
       # - name: get version
       #   id: version
       #   uses: notiz-dev/github-action-json-property@release
