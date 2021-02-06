@@ -6,7 +6,7 @@ jobs:
   test-echo:
     runs-on: ubuntu-latest
     steps:
-      - uses: zardoy/sync-all
+      - uses: zardoy/sync-all@main
         with:
           config_file: repos.json
           github_token: ${{ secrets.sync_github_token }}
