@@ -32,6 +32,7 @@ const addFilesSyncStep = async (filesSourceDir: string, targetRepos: string[]) =
             DRY_RUN: true,
             GITHUB_TOKEN: GITHUB_TOKEN_FOR_SYNC,
             SRC_ROOT: filesSourceDir,
+            COMMIT_MESSAGE: "",
             FILE_PATTERNS: relativePaths
                 .map(path => `^${escapeStringRegexp(path)}$`)
                 .join("\n"),
@@ -44,14 +45,13 @@ const addSecretsSyncStep = (secrets: string[], targetRepos: string[]) => {
     return {
         uses: "google/secrets-sync-action@master",
         with: {
-            DRY_RUN: true,
-            SECRETS: secrets
+            dry_run: true,
+            secrets: secrets
                 .map(secret => `^${escapeStringRegexp(secret)}$`)
                 .join("\n"),
-            REPOSITORIES: targetRepos
-                .map(repo => `^${escapeStringRegexp(repo)}$`)
-                .join("\n"),
-            GITHUB_TOKEN: GITHUB_TOKEN_FOR_SYNC,
+            repositories_list_regex: false,
+            repositories: targetRepos.join("\n"),
+            github_token: GITHUB_TOKEN_FOR_SYNC,
         },
         env: Object.fromEntries(
             secrets.map(secret => {

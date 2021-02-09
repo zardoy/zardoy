@@ -12,14 +12,15 @@ jobs:
     steps:
       - uses: google/secrets-sync-action@master
         with:
-          DRY_RUN: true
-          SECRETS: ^NPM_TOKEN$
-          REPOSITORIES: |-
-            ^zardoy/vk\x2dparams$
-            ^zardoy/read\x2dbrowser\x2dtabs$
-            ^zardoy/craco\x2delectron$
-            ^zardoy/world\x2dto\x2dworld$
-          GITHUB_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
+          dry_run: true
+          secrets: ^NPM_TOKEN$
+          repositories_list_regex: false
+          repositories: |-
+            zardoy/vk-params
+            zardoy/read-browser-tabs
+            zardoy/craco-electron
+            zardoy/world-to-world
+          github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   sync-websites:
