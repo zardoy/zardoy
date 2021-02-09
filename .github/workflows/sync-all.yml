@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: google/secrets-sync-action@master
         with:
-          dry_run: true
           secrets: ^NPM_TOKEN$
           repositories_list_regex: false
           repositories: |-
@@ -28,9 +27,9 @@ jobs:
     steps:
       - uses: adrianjost/files-sync-action@master
         with:
-          DRY_RUN: true
           GITHUB_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
           SRC_ROOT: sync/websites
+          COMMIT_MESSAGE: 'sync-files: update files from "%SRC_REPO%"'
           FILE_PATTERNS: ^\.github/workflows/gh\x2dpages\.yml$
           TARGET_REPOS: |-
             zardoy/zardoy-site
