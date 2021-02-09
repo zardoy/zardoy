@@ -32,7 +32,7 @@ const addFilesSyncStep = async (filesSourceDir: string, targetRepos: string[]) =
             DRY_RUN: true,
             GITHUB_TOKEN: GITHUB_TOKEN_FOR_SYNC,
             SRC_ROOT: filesSourceDir,
-            COMMIT_MESSAGE: "",
+            COMMIT_MESSAGE: "sync-files: update files from \"%SRC_REPO%\"",
             FILE_PATTERNS: relativePaths
                 .map(path => `^${escapeStringRegexp(path)}$`)
                 .join("\n"),
