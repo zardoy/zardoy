@@ -2,6 +2,7 @@ import jsToYaml from "js-yaml";
 import fs from "fs";
 import path from "path";
 import escapeStringRegexp from "escape-string-regexp";
+import dirScan from "scan-dir-recursive/promise/relative";
 
 interface ExpectedConfig {
     [groupName: string]: {
@@ -21,14 +22,19 @@ const
     GITHUB_NATIVE_OWNER = "zardoy",
     GITHUB_TOKEN_FOR_SYNC = "${{ secrets.SYNC_GITHUB_TOKEN }}";
 
-const addFilesSyncStep = (filesSourceDir: string, targetRepos: string[]) => {
+const addFilesSyncStep = async (filesSourceDir: string, targetRepos: string[]) => {
+    const absoluteDir = path.join(__dirname, "..", filesSourceDir);
+    // TODO special logic for workflows
+    const relativePaths = await dirScan(absoluteDir);
     return {
         uses: "adrianjost/files-sync-action@master",
         with: {
             DRY_RUN: true,
             GITHUB_TOKEN: GITHUB_TOKEN_FOR_SYNC,
             SRC_ROOT: filesSourceDir,
-            FILE_PATTERNS: ".*",
+            FILE_PATTERNS: relativePaths
+                .map(path => `^${escapeStringRegexp(path)}$`)
+                .join("\n"),
             TARGET_REPOS: targetRepos.join("\n")
         }
     };
@@ -67,7 +73,7 @@ interface GithubWorkflowJob {
     }
 }
 
-const generateWorkflow = () => {
+const generateWorkflow = async () => {
     const REPOS_CONFIG_FILE_PATH = path.join(__dirname, "..", CONFIG_PATH);
     const reposConfig: ExpectedConfig = require(REPOS_CONFIG_FILE_PATH);
     const workflowJobs: GithubWorkflowJob = {};
@@ -92,7 +98,7 @@ const generateWorkflow = () => {
             fs.existsSync(path.join(__dirname, "..", filesSourceDir))
         ) {
             workflowSteps.push(
-                addFilesSyncStep(filesSourceDir, targetRepos)
+                await addFilesSyncStep(filesSourceDir, targetRepos)
             );
         } else {
             console.warn(`Skipping files sync in ${groupName} as directory ${filesSourceDir} doesn't exist`);
@@ -121,7 +127,9 @@ const generateWorkflow = () => {
         lineWidth: -1,
         // noRefs: true
     });
-    fs.writeFileSync(path.join(__dirname, "..", pathToWorkflow), TOP_FILE_COMMENT + "\n\n" + yamlContent);
+    await fs.promises.writeFile(path.join(__dirname, "..", pathToWorkflow), TOP_FILE_COMMENT + "\n\n" + yamlContent);
 }
 
-generateWorkflow();
+generateWorkflow().catch(err => {
+    throw err;
+});

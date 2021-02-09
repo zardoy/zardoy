@@ -12,14 +12,14 @@ jobs:
     steps:
       - uses: google/secrets-sync-action@master
         with:
-          dry_run: true
-          secrets: ^NPM_TOKEN$
-          repositories: |-
+          DRY_RUN: true
+          SECRETS: ^NPM_TOKEN$
+          REPOSITORIES: |-
             ^zardoy/vk\x2dparams$
             ^zardoy/read\x2dbrowser\x2dtabs$
             ^zardoy/craco\x2delectron$
             ^zardoy/world\x2dto\x2dworld$
-          github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   sync-websites:
@@ -30,7 +30,7 @@ jobs:
           DRY_RUN: true
           GITHUB_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
           SRC_ROOT: sync/websites
-          FILE_PATTERNS: .*
+          FILE_PATTERNS: ^\.github/workflows/gh\x2dpages\.yml$
           TARGET_REPOS: |-
             zardoy/zardoy-site
             zardoy/tell-tale-about-borow
