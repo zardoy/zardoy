@@ -19,19 +19,7 @@ jobs:
             zardoy/read-browser-tabs
             zardoy/craco-electron
             zardoy/world-to-world
+            zardoy/tsconfig
           github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-  sync-websites:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: adrianjost/files-sync-action@master
-        with:
-          GITHUB_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
-          SRC_ROOT: sync/websites
-          COMMIT_MESSAGE: 'sync-files: update files from "%SRC_REPO%"'
-          FILE_PATTERNS: ^\.github/workflows/gh\x2dpages\.yml$
-          TARGET_REPOS: |-
-            zardoy/zardoy-site
-            zardoy/tell-tale-about-borow
-            zardoy/ggworlds.ru
