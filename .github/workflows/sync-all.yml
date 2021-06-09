@@ -21,6 +21,7 @@ jobs:
             zardoy/world-to-world
             zardoy/tsconfig
             zardoy/modify-json-file
+            zardoy/typed-ipc
           github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
