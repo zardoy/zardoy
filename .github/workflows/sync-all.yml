@@ -20,6 +20,7 @@ jobs:
             zardoy/craco-electron
             zardoy/world-to-world
             zardoy/tsconfig
+            zardoy/modify-json
           github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
