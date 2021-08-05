@@ -6,7 +6,8 @@
             "vk-params",
             "read-browser-tabs",
             "craco-electron",
-            "world-to-world"
+            "world-to-world",
+            "github-remote-info"
         ]
     },
     "electron-apps": {
