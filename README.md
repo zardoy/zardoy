@@ -3,3 +3,7 @@
 Web is my passion. Love VSCode, but not its performance. Also I have created some extensions for it:
 
 - [GitHub Manager](https://github.com/zardoy/github-manager) to quickly switch between cloned repos via `owner/name` search.
+
+---
+
+[My VSCode keymap](https://github.com/zardoy/vscode-keybindings)
