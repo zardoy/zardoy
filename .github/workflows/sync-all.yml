@@ -10,6 +10,7 @@ jobs:
   sync-npm-packages:
     runs-on: ubuntu-latest
     steps:
+      - name: Sync NPM Token
       - uses: google/secrets-sync-action@master
         with:
           secrets: ^NPM_TOKEN$
@@ -26,3 +27,13 @@ jobs:
           github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Sync VSCE Token (PAT)
+      - uses: google/secrets-sync-action@master
+        with:
+          secrets: ^VSCE_PAT$
+          repositories_list_regex: false
+          repositories: |-
+            zardoy/vscode-keybindings
+          github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
