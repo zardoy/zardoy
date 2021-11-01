@@ -2,28 +2,39 @@
 
 name: Sync Files & Secrets
 'on':
-  push:
-    branches:
-      - master
-      - main
+    push:
+        branches:
+            - master
+            - main
 jobs:
-  sync-npm-packages:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: google/secrets-sync-action@master
-        with:
-          secrets: ^NPM_TOKEN$
-          repositories_list_regex: false
-          repositories: |-
-            zardoy/vk-params
-            zardoy/read-browser-tabs
-            zardoy/craco-electron
-            zardoy/world-to-world
-            zardoy/tsconfig
-            zardoy/modify-json-file
-            zardoy/typed-ipc
-            zardoy/github-remote-info
-            zardoy/publish-action
-          github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    sync-npm-packages:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Sync NPM Token
+              uses: google/secrets-sync-action@master
+              with:
+                  secrets: ^NPM_TOKEN$
+                  repositories_list_regex: false
+                  repositories: |-
+                      zardoy/vk-params
+                      zardoy/read-browser-tabs
+                      zardoy/craco-electron
+                      zardoy/world-to-world
+                      zardoy/tsconfig
+                      zardoy/modify-json-file
+                      zardoy/typed-ipc
+                      zardoy/github-remote-info
+                      zardoy/publish-action
+                  github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
+              env:
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+            - name: Sync VSCE Token (PAT)
+              uses: google/secrets-sync-action@master
+              with:
+                  secrets: ^VSCE_PAT$
+                  repositories_list_regex: false
+                  repositories: |-
+                      zardoy/vscode-keybindings
+                  github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
+              env:
+                  VSCE_PAT: ${{ secrets.VSCE_PAT }}
