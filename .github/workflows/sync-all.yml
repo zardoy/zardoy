@@ -13,38 +13,33 @@ jobs:
             - name: Sync NPM Token
               uses: google/secrets-sync-action@master
               with:
-                  secrets: ^NPM_TOKEN$
+                  secrets: |
+                      ^NPM_TOKEN$
+                      ^GH_TOKEN$
                   repositories_list_regex: false
                   repositories: |-
-                      zardoy/read-browser-tabs
                       zardoy/tsconfig
+                      zardoy/eslint-config
                       zardoy/modify-json-file
-                      zardoy/typed-ipc
                       zardoy/github-remote-info
                       zardoy/publish-action
                       zardoy/package-with-types
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
             - name: Sync VSCE Token (PAT)
               uses: google/secrets-sync-action@master
               with:
-                  secrets: ^VSCE_PAT$
+                  secrets: |
+                      ^VSCE_PAT$
+                      ^OVSX_PAT$
+                      ^GH_TOKEN$
                   repositories_list_regex: false
                   repositories: |-
                       zardoy/vscode-keybindings
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   VSCE_PAT: ${{ secrets.VSCE_PAT }}
-            - name: Sync GH_TOKEN
-              uses: google/secrets-sync-action@master
-              with:
-                  secrets: ^GH_TOKEN$
-                  repositories_list_regex: false
-                  # todo: auto combine them, since its required whenever PAT or NPM_TOKEN used
-                  repositories: |-
-                      zardoy/publish-action
-                      zardoy/vscode-keybindings
-                  github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
-              env:
+                  OVSX_PAT: ${{ secrets.OVSX_PAT }}
                   GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
