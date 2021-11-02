@@ -39,7 +39,7 @@ jobs:
             - name: Sync GitHub Token
               uses: google/secrets-sync-action@master
               with:
-                  secrets: ^SYNC_GITHUB_TOKEN$
+                  secrets: ^GH_TOKEN$
                   repositories_list_regex: false
                   # todo: auto combine them, since its required whenever PAT or NPM_TOKEN used
                   repositories: |-
@@ -47,4 +47,4 @@ jobs:
                       zardoy/vscode-keybindings
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
-                  VSCE_PAT: ${{ secrets.SYNC_GITHUB_TOKEN }}
+                  GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
