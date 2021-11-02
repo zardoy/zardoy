@@ -25,6 +25,7 @@ jobs:
                       zardoy/typed-ipc
                       zardoy/github-remote-info
                       zardoy/publish-action
+                      zardoy/package-with-types
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
