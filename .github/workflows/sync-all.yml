@@ -36,7 +36,7 @@ jobs:
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   VSCE_PAT: ${{ secrets.VSCE_PAT }}
-            - name: Sync GitHub Token
+            - name: Sync GH_TOKEN
               uses: google/secrets-sync-action@master
               with:
                   secrets: ^GH_TOKEN$
