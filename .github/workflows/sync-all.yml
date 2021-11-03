@@ -23,6 +23,7 @@ jobs:
                       zardoy/modify-json-file
                       zardoy/github-remote-info
                       zardoy/publish-action
+                      zardoy/typed-jsonfile
                       zardoy/package-with-types
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
