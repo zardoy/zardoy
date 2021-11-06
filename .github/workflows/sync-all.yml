@@ -26,6 +26,7 @@ jobs:
                       zardoy/typed-jsonfile
                       zardoy/package-with-types
                       zardoy/vscode-framework
+                      zardoy/release-action-monorepo
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
