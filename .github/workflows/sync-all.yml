@@ -28,17 +28,17 @@ jobs:
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
                   GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
-            # - name: Sync VSCE & OVSX Tokens (PAT)
-            #   uses: google/secrets-sync-action@master
-            #   with:
-            #       secrets: |
-            #           ^VSCE_PAT$
-            #           ^OVSX_PAT$
-            #           ^GH_TOKEN$
-            #       repositories_list_regex: false
-            #       repositories: ${{ join(fromJSON(steps.repos.outputs.repos).vscode-extensions.repos, '%0D') }}
-            #       github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
-            #   env:
-            #       VSCE_PAT: ${{ secrets.VSCE_PAT }}
-            #       OVSX_PAT: ${{ secrets.OVSX_PAT }}
-            #       GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
+            - name: Sync VSCE & OVSX Tokens (PAT)
+              uses: google/secrets-sync-action@master
+              with:
+                  secrets: |
+                      ^VSCE_PAT$
+                      ^OVSX_PAT$
+                      ^GH_TOKEN$
+                  repositories_list_regex: false
+                  repositories: ${{ steps.repos.outputs.vscode-extensions }}
+                  github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
+              env:
+                  VSCE_PAT: ${{ secrets.VSCE_PAT }}
+                  OVSX_PAT: ${{ secrets.OVSX_PAT }}
+                  GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}

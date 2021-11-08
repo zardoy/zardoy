@@ -2,14 +2,14 @@
     "npm-packages": {
         "color": "blue",
         "repos": [
-            "zardoy/tsconfig",
-            "zardoy/eslint-config",
-            "zardoy/modify-json-file",
-            "zardoy/github-remote-info",
-            "zardoy/publish-action",
-            "zardoy/typed-jsonfile",
-            "zardoy/package-with-types",
-            "zardoy/vscode-framework"
+            "tsconfig",
+            "eslint-config",
+            "modify-json-file",
+            "github-remote-info",
+            "publish-action",
+            "typed-jsonfile",
+            "package-with-types",
+            "vscode-framework"
         ]
     },
     "electron-apps": {
@@ -29,7 +29,7 @@
     },
     "vscode-extensions": {
         "repos": [
-            "zardoy/vscode-keybindings"
+            "vscode-keybindings"
         ],
         "skipTesting": [
             "vscode-keybindings"
