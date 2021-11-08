@@ -1,15 +1,15 @@
 {
     "npm-packages": {
         "color": "blue",
-        "secrets": [
-            "NPM_TOKEN"
-        ],
         "repos": [
-            "vk-params",
-            "read-browser-tabs",
-            "craco-electron",
-            "world-to-world",
-            "github-remote-info"
+            "zardoy/tsconfig",
+            "zardoy/eslint-config",
+            "zardoy/modify-json-file",
+            "zardoy/github-remote-info",
+            "zardoy/publish-action",
+            "zardoy/typed-jsonfile",
+            "zardoy/package-with-types",
+            "zardoy/vscode-framework"
         ]
     },
     "electron-apps": {
