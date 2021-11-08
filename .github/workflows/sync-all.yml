@@ -10,6 +10,9 @@ jobs:
     sync-npm-packages:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v2
+            - id: repos
+              run: node -p "'::set-output name=repos::'+require('fs').readFileSync('repos.json', 'utf-8')"
             - name: Sync NPM Token
               uses: google/secrets-sync-action@master
               with:
@@ -38,8 +41,7 @@ jobs:
                       ^OVSX_PAT$
                       ^GH_TOKEN$
                   repositories_list_regex: false
-                  repositories: |-
-                      zardoy/vscode-keybindings
+                  repositories: ${{ join(fromJSON(steps.repos.outputs.vscode-extensions.repos), '\n') }}
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   VSCE_PAT: ${{ secrets.VSCE_PAT }}

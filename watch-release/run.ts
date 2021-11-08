@@ -26,6 +26,11 @@ const products: Record<string, { notifyRepos: string[] } & ({ repoTag: string } 
 const currentReleasesPath = join(__dirname, './currentReleases.json')
 let currentReleases = await readJsonFile<JsonStore>(currentReleasesPath)
 
-octokit.actions.createWorkflowDispatch({
-    owner: '',
+const defaultOwner = process.env.GITHUB_ACTOR!
+
+const {} = await octokit.actions.createWorkflowDispatch({
+    owner: 'zardoy',
+    repo: 'release-testing',
+    ref: 'main',
+    workflow_id: 'ci.yml',
 })

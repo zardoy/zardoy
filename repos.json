@@ -28,6 +28,11 @@
         ]
     },
     "vscode-extensions": {
-        "repos": []
+        "repos": [
+            "zardoy/vscode-keybindings"
+        ],
+        "skipTesting": [
+            "vscode-keybindings"
+        ]
     }
 }
