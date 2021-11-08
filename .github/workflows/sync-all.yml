@@ -41,7 +41,7 @@ jobs:
                       ^OVSX_PAT$
                       ^GH_TOKEN$
                   repositories_list_regex: false
-                  repositories: ${{ join(fromJSON(steps.repos.outputs.vscode-extensions.repos), '\n') }}
+                  repositories: ${{ join(fromJSON(steps.repos.outputs.repos.vscode-extensions.repos), '\n') }}
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   VSCE_PAT: ${{ secrets.VSCE_PAT }}
