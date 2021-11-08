@@ -30,7 +30,7 @@ jobs:
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
                   GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
-            - name: Sync VSCE Token (PAT)
+            - name: Sync VSCE & OVSX Tokens (PAT)
               uses: google/secrets-sync-action@master
               with:
                   secrets: |

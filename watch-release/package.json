@@ -1,0 +1,13 @@
+{
+  "name": "watch-release",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "@types/node": "^16.11.6",
+    "execa": "^5.1.1",
+    "typed-jsonfile": "^0.2.0"
+  }
+}

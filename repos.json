@@ -1,7 +1,9 @@
 {
     "npm-packages": {
         "color": "blue",
-        "secrets": ["NPM_TOKEN"],
+        "secrets": [
+            "NPM_TOKEN"
+        ],
         "repos": [
             "vk-params",
             "read-browser-tabs",
@@ -24,5 +26,8 @@
             "tell-tale-about-borow",
             "ggworlds.ru"
         ]
+    },
+    "vscode-extensions": {
+        "repos": []
     }
 }

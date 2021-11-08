@@ -2,7 +2,30 @@ import execa from 'execa'
 import fs from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { readJsonFile } from 'typed-jsonfile'
+import { Octokit } from '@octokit/rest'
 
-const currentReleasesPath = join(dirname(fileURLToPath(import.meta.url)), './currentReleases.json')
+type SemverVersion = string
+type JsonStore = { [product: string]: SemverVersion }
 
-let currentReleases = await fs.promises.readFile(currentReleasesPath, 'utf-8')
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const octokit = new Octokit({
+    auth: process.env.GITHUB_TOKEN,
+})
+
+const reposFromIndex = await readJsonFile<Record<string, { repos: string[] }>>('repos.json')
+
+const products: Record<string, { notifyRepos: string[] } & ({ repoTag: string } | { resolveVersion: () => Promise<string> })> = {
+    vscode: {
+        notifyRepos: reposFromIndex['vscode-extensions'].repos,
+        repoTag: 'microsoft/vscode',
+    },
+}
+
+const currentReleasesPath = join(__dirname, './currentReleases.json')
+let currentReleases = await readJsonFile<JsonStore>(currentReleasesPath)
+
+octokit.actions.createWorkflowDispatch({
+    owner: '',
+})
