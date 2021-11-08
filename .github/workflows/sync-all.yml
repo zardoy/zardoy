@@ -12,7 +12,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - id: repos
-              run: node -p "'::set-output name=repos::'+JSON.stringify(JSON.parse(require('fs').readFileSync('repos.json', 'utf-8')))"
+              run: node readRepos.mjs
             - name: Sync NPM Token
               uses: google/secrets-sync-action@master
               with:
@@ -20,7 +20,7 @@ jobs:
                       ^NPM_TOKEN$
                       ^GH_TOKEN$
                   repositories_list_regex: false
-                  repositories: ${{ join(fromJSON(steps.repos.outputs.repos).npm-packages.repos, '%0D') }}
+                  repositories: ${{ steps.repos.outputs.npm-packages }}
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
