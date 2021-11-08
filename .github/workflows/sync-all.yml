@@ -12,27 +12,27 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - id: repos
-              run: node -p "'::set-output name=repos::'+require('fs').readFileSync('repos.json', 'utf-8')"
-            - name: Sync NPM Token
-              uses: google/secrets-sync-action@master
-              with:
-                  secrets: |
-                      ^NPM_TOKEN$
-                      ^GH_TOKEN$
-                  repositories_list_regex: false
-                  repositories: |-
-                      zardoy/tsconfig
-                      zardoy/eslint-config
-                      zardoy/modify-json-file
-                      zardoy/github-remote-info
-                      zardoy/publish-action
-                      zardoy/typed-jsonfile
-                      zardoy/package-with-types
-                      zardoy/vscode-framework
-                  github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
-              env:
-                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-                  GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
+              run: node -p "'::set-output name=repos::'+JSON.stringify(JSON.parse(require('fs').readFileSync('repos.json', 'utf-8')))"
+            # - name: Sync NPM Token
+            #   uses: google/secrets-sync-action@master
+            #   with:
+            #       secrets: |
+            #           ^NPM_TOKEN$
+            #           ^GH_TOKEN$
+            #       repositories_list_regex: false
+            #       repositories: |-
+            #           zardoy/tsconfig
+            #           zardoy/eslint-config
+            #           zardoy/modify-json-file
+            #           zardoy/github-remote-info
+            #           zardoy/publish-action
+            #           zardoy/typed-jsonfile
+            #           zardoy/package-with-types
+            #           zardoy/vscode-framework
+            #       github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
+            #   env:
+            #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+            #       GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
             - name: Sync VSCE & OVSX Tokens (PAT)
               uses: google/secrets-sync-action@master
               with:
