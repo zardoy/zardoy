@@ -8,5 +8,5 @@ for (const [group, { repos }] of Object.entries(reposIndexes)) {
     for (const i in repos) {
         if (repos[i].split('/').length === 1) repos[i] = `${process.env.GITHUB_ACTOR}/${repos[i]}`
     }
-    console.log(`::set-output name=${group}::${repos.join('%0D')}`)
+    console.log(`::set-output name=${group}::${repos.join('%0A')}`)
 }

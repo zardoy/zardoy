@@ -16,18 +16,18 @@ jobs:
             - run: echo $OUTPUT
               env:
                 OUTPUT: ${{ steps.repos.outputs.npm-packages }}
-            # - name: Sync NPM Token
-            #   uses: google/secrets-sync-action@master
-            #   with:
-            #       secrets: |
-            #           ^NPM_TOKEN$
-            #           ^GH_TOKEN$
-            #       repositories_list_regex: false
-            #       repositories: ${{ steps.repos.outputs.npm-packages }}
-            #       github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
-            #   env:
-            #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-            #       GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
+            - name: Sync NPM Token
+              uses: google/secrets-sync-action@master
+              with:
+                  secrets: |
+                      ^NPM_TOKEN$
+                      ^GH_TOKEN$
+                  repositories_list_regex: false
+                  repositories: ${{ steps.repos.outputs.npm-packages }}
+                  github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
+              env:
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  GH_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
             # - name: Sync VSCE & OVSX Tokens (PAT)
             #   uses: google/secrets-sync-action@master
             #   with:
