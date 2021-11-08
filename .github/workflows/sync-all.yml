@@ -20,7 +20,7 @@ jobs:
                       ^NPM_TOKEN$
                       ^GH_TOKEN$
                   repositories_list_regex: false
-                  repositories: ${{ join(fromJSON(steps.repos.outputs.repos).npm-packages.repos, '\n') }}
+                  repositories: ${{ join(fromJSON(steps.repos.outputs.repos).npm-packages.repos, '%0A') }}
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -33,7 +33,7 @@ jobs:
                       ^OVSX_PAT$
                       ^GH_TOKEN$
                   repositories_list_regex: false
-                  repositories: ${{ join(fromJSON(steps.repos.outputs.repos).vscode-extensions.repos, '\n') }}
+                  repositories: ${{ join(fromJSON(steps.repos.outputs.repos).vscode-extensions.repos, '%0A') }}
                   github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
               env:
                   VSCE_PAT: ${{ secrets.VSCE_PAT }}
