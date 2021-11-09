@@ -17,5 +17,6 @@ jobs:
               with:
                 version: latest
                 run_install: |
+                    cwd: watch-release
                     args: [--frozen-lockfile, --strict-peer-dependencies]
             - run: pnpx -y tsm watch-release/run.ts
