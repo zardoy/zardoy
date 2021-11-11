@@ -29,7 +29,8 @@
     },
     "vscode-extensions": {
         "repos": [
-            "vscode-keybindings"
+            "vscode-keybindings",
+            "github-manager"
         ],
         "skipTesting": [
             "vscode-keybindings"
