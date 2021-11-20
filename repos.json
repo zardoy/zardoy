@@ -9,7 +9,8 @@
             "publish-action",
             "typed-jsonfile",
             "package-with-types",
-            "vscode-framework"
+            "vscode-framework",
+            "repos.json"
         ]
     },
     "electron-apps": {
