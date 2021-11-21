@@ -10,7 +10,8 @@
             "typed-jsonfile",
             "package-with-types",
             "vscode-framework",
-            "repos.json"
+            "repos.json",
+            "mrm-preset"
         ]
     },
     "electron-apps": {
