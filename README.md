@@ -1,4 +1,4 @@
-Web is my passion. VSCode! Extensions! Dimaka!
+VSCode Extensions! Dimaka!
 
 Some extensions of mine:
 
