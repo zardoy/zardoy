@@ -32,7 +32,8 @@
     "vscode-extensions": {
         "repos": [
             "vscode-keybindings",
-            "github-manager"
+            "github-manager",
+            "npm-the-fastest"
         ],
         "skipTesting": [
             "vscode-keybindings"
