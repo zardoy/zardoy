@@ -11,7 +11,8 @@
             "package-with-types",
             "vscode-framework",
             "repos.json",
-            "mrm-preset"
+            "mrm-preset",
+            "vite-wrapper"
         ]
     },
     "electron-apps": {
