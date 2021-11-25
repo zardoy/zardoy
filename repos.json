@@ -12,7 +12,8 @@
             "vscode-framework",
             "repos.json",
             "mrm-preset",
-            "vite-wrapper"
+            "vite-wrapper",
+            "react-utils"
         ]
     },
     "electron-apps": {
