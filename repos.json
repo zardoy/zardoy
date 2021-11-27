@@ -13,7 +13,8 @@
             "repos.json",
             "mrm-preset",
             "vite-wrapper",
-            "react-utils"
+            "react-utils",
+            "dimaka-love/interface"
         ]
     },
     "electron-apps": {
