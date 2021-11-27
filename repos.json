@@ -37,7 +37,8 @@
             "vscode-keybindings",
             "github-manager",
             "extra-commands",
-            "npm-the-fastest"
+            "npm-the-fastest",
+            "vscode-better-snippets"
         ],
         "skipTesting": [
             "vscode-keybindings"
