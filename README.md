@@ -1,4 +1,4 @@
-VSCode Extensions! Dimaka!
+Dimaka! VSCode Extensions!
 
 Some extensions of mine:
 
