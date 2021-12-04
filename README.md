@@ -7,6 +7,7 @@ Some extensions of mine:
 
 Delayed/not published yet:
 
-- [Better Snippets](https://github.com/zardoy/vscode-better-snippets) contains commands that should be builtin
+- [Better Snippets](https://github.com/zardoy/vscode-better-snippets) only useful builtin snippets and postfix for now
 - [npm the fastest](https://github.com/zardoy/npm-the-fastest)
+
 ... and even more
