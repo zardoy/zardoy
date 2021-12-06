@@ -14,6 +14,7 @@
             "mrm-preset",
             "vite-wrapper",
             "react-utils",
+            "strict-lodash",
             "dimaka-love/interface"
         ]
     },
