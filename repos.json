@@ -42,7 +42,7 @@
             "vscode-better-snippets",
             "vscode-always-tab",
             "vscode-fix-all-json",
-            "vscode-internals",
+            "vscode-experiments",
             "vscode-terminal-code-runner"
         ],
         "skipTesting": [
