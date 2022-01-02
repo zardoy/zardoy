@@ -43,7 +43,7 @@
             "vscode-fix-all-json",
             "vscode-experiments",
             "vscode-terminal-code-runner",
-            "vscode-prettier"
+            "prettier-vscode"
         ],
         "skipTesting": [
             "vscode-keybindings"
