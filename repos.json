@@ -43,7 +43,8 @@
             "vscode-always-tab",
             "vscode-fix-all-json",
             "vscode-internals",
-            "vscode-terminal-code-runner"
+            "vscode-terminal-code-runner",
+            "vscode-prettier"
         ],
         "skipTesting": [
             "vscode-keybindings"
