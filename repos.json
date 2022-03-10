@@ -43,6 +43,7 @@
             "vscode-fix-all-json",
             "vscode-experiments",
             "vscode-terminal-code-runner",
+            "vetur-extended",
             "prettier-vscode"
         ],
         "skipTesting": [
