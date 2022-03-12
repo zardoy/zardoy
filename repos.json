@@ -44,7 +44,8 @@
             "vscode-experiments",
             "vscode-terminal-code-runner",
             "vetur-extended",
-            "prettier-vscode"
+            "prettier-vscode",
+            "vscode-utils"
         ],
         "skipTesting": [
             "vscode-keybindings"
