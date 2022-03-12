@@ -15,7 +15,8 @@
             "vite-wrapper",
             "react-utils",
             "strict-lodash",
-            "dimaka-love/interface"
+            "dimaka-love/interface",
+            "vscode-utils"
         ]
     },
     "electron-apps": {
@@ -44,8 +45,7 @@
             "vscode-experiments",
             "vscode-terminal-code-runner",
             "vetur-extended",
-            "prettier-vscode",
-            "vscode-utils"
+            "prettier-vscode"
         ],
         "skipTesting": [
             "vscode-keybindings"
