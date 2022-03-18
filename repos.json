@@ -15,7 +15,8 @@
             "vite-wrapper",
             "react-utils",
             "strict-lodash",
-            "dimaka-love/interface"
+            "dimaka-love/interface",
+            "geometry-lib-demo"
         ]
     },
     "electron-apps": {
