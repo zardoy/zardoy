@@ -16,7 +16,8 @@
             "react-utils",
             "strict-lodash",
             "dimaka-love/interface",
-            "geometry-lib-demo"
+            "geometry-lib-demo",
+            "vscode-utils"
         ]
     },
     "electron-apps": {
@@ -44,7 +45,9 @@
             "vscode-fix-all-json",
             "vscode-experiments",
             "vscode-terminal-code-runner",
-            "prettier-vscode"
+            "vetur-extended",
+            "prettier-vscode",
+            "vscode-extension-patches"
         ],
         "skipTesting": [
             "vscode-keybindings"
