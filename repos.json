@@ -17,7 +17,8 @@
             "strict-lodash",
             "dimaka-love/interface",
             "geometry-lib-demo",
-            "vscode-utils"
+            "vscode-utils",
+            "scss-bundle"
         ]
     },
     "electron-apps": {
