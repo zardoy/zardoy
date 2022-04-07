@@ -6,5 +6,7 @@ Some extensions of mine:
 - [Better Snippets](https://github.com/zardoy/vscode-better-snippets)
 - [npm Rapid Ready](https://github.com/zardoy/npm-the-fastest)
 - [Extra Commands](https://github.com/zardoy/extra-commands) contains commands that should be builtin
+- [Vetur Extended](https://github.com/zardoy/vetur-extended) (for Vetur/Volar) simple code completion, go to reference from template
+- [Extended Extensions](https://github.com/zardoy/vscode-patches) - experimental extensions that give new possibilites!
 
 ... and even more
