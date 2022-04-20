@@ -48,7 +48,8 @@
             "vscode-terminal-code-runner",
             "vetur-extended",
             "prettier-vscode",
-            "vscode-extension-patches"
+            "vscode-extension-patches",
+            "vue-devtools-adapter"
         ],
         "skipTesting": [
             "vscode-keybindings"
