@@ -49,7 +49,8 @@
             "vetur-extended",
             "prettier-vscode",
             "vscode-extension-patches",
-            "vue-devtools-adapter"
+            "vue-devtools-adapter",
+            "vscode-typescript-service-logger"
         ],
         "skipTesting": [
             "vscode-keybindings"
