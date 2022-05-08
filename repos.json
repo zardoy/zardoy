@@ -50,7 +50,8 @@
             "prettier-vscode",
             "vscode-extension-patches",
             "vue-devtools-adapter",
-            "vscode-typescript-service-logger"
+            "vscode-typescript-service-logger",
+            "typescript-vscode-plugins"
         ],
         "skipTesting": [
             "vscode-keybindings"
