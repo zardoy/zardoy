@@ -18,7 +18,8 @@
             "dimaka-love/interface",
             "geometry-lib-demo",
             "vscode-utils",
-            "scss-bundle"
+            "scss-bundle",
+            "const-name"
         ]
     },
     "electron-apps": {
@@ -51,8 +52,7 @@
             "vscode-extension-patches",
             "vue-devtools-adapter",
             "vscode-typescript-service-logger",
-            "typescript-vscode-plugins",
-            "const-name"
+            "typescript-vscode-plugins"
         ],
         "skipTesting": [
             "vscode-keybindings"
