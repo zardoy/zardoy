@@ -19,7 +19,8 @@
             "geometry-lib-demo",
             "vscode-utils",
             "scss-bundle",
-            "const-name"
+            "const-name",
+            "electron-esbuild"
         ]
     },
     "electron-apps": {
