@@ -1,12 +1,15 @@
-Dimaka! VSCode Extensions!
+VSCode Extensions!!
+
+In an endless journey to make DX even better!
 
 Some extensions of mine:
 
-- [GitHub Manager](https://github.com/zardoy/github-manager) to quickly switch between cloned repos via `owner/name` search
-- [Better Snippets](https://github.com/zardoy/vscode-better-snippets)
-- [npm Rapid Ready](https://github.com/zardoy/npm-the-fastest)
-- [My experimental commands](https://github.com/zardoy/vscode-experiments) adds >50 super useful commands (source)
+- [:fire: Better Snippets](https://github.com/zardoy/vscode-better-snippets)
+- [:fire: :fire: TypeScript Essential Plugins](https://github.com/zardoy/typescript-vscode-plugins) - puts your DX in JS/TS to another level! 
+- [:fire: npm Rapid Ready](https://github.com/zardoy/npm-the-fastest) - unique/stunning features for your package.json / package manager!
+- [My experimental commands](https://github.com/zardoy/vscode-experiments) adds >50 super useful/unique commands (view source)
 - [Extra Commands](https://github.com/zardoy/extra-commands) contains commands that should be builtin
+- [GitHub Manager](https://github.com/zardoy/github-manager) to quickly switch between cloned repos via `owner/name` search
 - [Vetur Extended](https://github.com/zardoy/vetur-extended) (for Vetur/Volar) simple code completion, go to reference from template
 - [Extended Extensions](https://github.com/zardoy/vscode-patches) - experimental extensions that give new possibilites!
 
