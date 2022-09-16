@@ -53,7 +53,8 @@
             "vscode-extension-patches",
             "vue-devtools-adapter",
             "vscode-typescript-service-logger",
-            "typescript-vscode-plugins"
+            "typescript-vscode-plugins",
+            "vscode-ide-scripting"
         ],
         "skipTesting": [
             "vscode-keybindings"
