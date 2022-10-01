@@ -2,7 +2,7 @@ VSCode Extensions!!
 
 In an endless journey to make DX even better!
 
-Some extensions of mine:
+Best extensions of mine:
 
 - [:fire: Better Snippets](https://github.com/zardoy/vscode-better-snippets)
 - [:fire: :fire: TypeScript Essential Plugins](https://github.com/zardoy/typescript-vscode-plugins) - puts your DX in JS/TS to another level! 
