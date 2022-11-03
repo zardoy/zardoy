@@ -14,3 +14,5 @@ Best extensions of mine:
 - [Extended Extensions](https://github.com/zardoy/vscode-patches) - experimental extensions that give new possibilites!
 
 ... and even more
+
+Pls contact me via Discord: [zardo#6546](https://discord.com/users/zardo#6546)
