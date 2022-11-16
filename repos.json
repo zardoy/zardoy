@@ -20,7 +20,8 @@
             "vscode-utils",
             "scss-bundle",
             "const-name",
-            "electron-esbuild"
+            "electron-esbuild",
+            "vscode-better-snippets"
         ]
     },
     "electron-apps": {
