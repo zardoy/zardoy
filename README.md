@@ -8,6 +8,7 @@ Best extensions of mine:
 - [:fire: :fire: TypeScript Essential Plugins](https://github.com/zardoy/typescript-vscode-plugins) - puts your DX in JS/TS to another level!
 - [:fire: npm Rapid Ready](https://github.com/zardoy/npm-the-fastest) - unique/stunning features for your package.json / package manager!
 - [Fix All JSON](https://github.com/zardoy/vscode-fix-all-json) - Utils & commands for fixing problems in JSON
+- [Loop Snippets](https://github.com/zardoy/vscode-loop-snippets) - Effective repeatable snippets by tab
 - [My experimental commands](https://github.com/zardoy/vscode-experiments) adds >50 super useful/unique commands (view source)
 - [Extra Commands](https://github.com/zardoy/extra-commands) contains commands that should be builtin
 - [GitHub Manager](https://github.com/zardoy/github-manager) to quickly switch between cloned repos via `owner/name` search
