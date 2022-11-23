@@ -55,7 +55,8 @@
             "vue-devtools-adapter",
             "vscode-typescript-service-logger",
             "typescript-vscode-plugins",
-            "vscode-ide-scripting"
+            "vscode-ide-scripting",
+            "vscode-loop-snippets"
         ],
         "skipTesting": [
             "vscode-keybindings"
