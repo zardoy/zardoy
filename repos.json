@@ -56,7 +56,8 @@
             "vscode-typescript-service-logger",
             "typescript-vscode-plugins",
             "vscode-ide-scripting",
-            "vscode-loop-snippets"
+            "vscode-loop-snippets",
+            "outline-utils"
         ],
         "skipTesting": [
             "vscode-keybindings"
