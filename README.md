@@ -10,6 +10,7 @@ Best extensions of mine:
 - [Fix All JSON](https://github.com/zardoy/vscode-fix-all-json) - Utils & commands for fixing problems in JSON
 - [Loop Snippets](https://github.com/zardoy/vscode-loop-snippets) - Effective repeatable snippets by tab
 - [Outline Utils](https://github.com/zardoy/vscode-outline-utils) - Useful commands for outline
+- [Move Statement](https://github.com/zardoy/vscode-move-statement) - Move statement commands in any language
 - [My experimental commands](https://github.com/zardoy/vscode-experiments) adds >50 super useful/unique commands (view source)
 - [Extra Commands](https://github.com/zardoy/extra-commands) contains commands that should be builtin
 - [GitHub Manager](https://github.com/zardoy/github-manager) to quickly switch between cloned repos via `owner/name` search
