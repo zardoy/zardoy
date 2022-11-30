@@ -57,7 +57,8 @@
             "typescript-vscode-plugins",
             "vscode-ide-scripting",
             "vscode-loop-snippets",
-            "vscode-outline-utils"
+            "vscode-outline-utils",
+            "vscode-move-statement"
         ],
         "skipTesting": [
             "vscode-keybindings"
