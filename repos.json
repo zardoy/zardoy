@@ -59,7 +59,8 @@
             "vscode-ide-scripting",
             "vscode-loop-snippets",
             "vscode-outline-utils",
-            "vscode-move-statement"
+            "vscode-move-statement",
+            "vscode-highlights-utils"
         ],
         "skipTesting": [
             "vscode-keybindings"
