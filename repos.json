@@ -21,7 +21,8 @@
             "scss-bundle",
             "const-name",
             "electron-esbuild",
-            "vscode-better-snippets"
+            "vscode-better-snippets",
+            "rename-repos"
         ]
     },
     "electron-apps": {
