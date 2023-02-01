@@ -60,7 +60,7 @@
             "vscode-loop-snippets",
             "vscode-outline-utils",
             "vscode-move-statement",
-            "vscode-highlights-utils"
+            "vscode-highlight-utils"
         ],
         "skipTesting": [
             "vscode-keybindings"
