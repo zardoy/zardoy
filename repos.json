@@ -22,7 +22,8 @@
             "const-name",
             "electron-esbuild",
             "vscode-better-snippets",
-            "rename-repos"
+            "rename-repos",
+            "vscode-icons-ts"
         ]
     },
     "electron-apps": {
