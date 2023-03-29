@@ -63,7 +63,8 @@
             "vscode-move-statement",
             "vscode-highlight-utils",
             "vscode-multi-rename",
-            "vscode-open-ai"
+            "vscode-open-ai",
+            "vscode-extend"
         ],
         "skipTesting": [
             "vscode-keybindings"
