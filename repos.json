@@ -64,7 +64,8 @@
             "vscode-highlight-utils",
             "vscode-multi-rename",
             "vscode-open-ai",
-            "vscode-extend"
+            "vscode-extend",
+            "vscode-disable-ts-errors"
         ],
         "skipTesting": [
             "vscode-keybindings"
