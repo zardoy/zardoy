@@ -23,7 +23,8 @@
             "electron-esbuild",
             "vscode-better-snippets",
             "rename-repos",
-            "vscode-icons-ts"
+            "vscode-icons-ts",
+            "ps3-game-updater"
         ]
     },
     "electron-apps": {
