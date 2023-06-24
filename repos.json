@@ -67,7 +67,8 @@
             "vscode-open-ai",
             "vscode-extend",
             "vscode-disable-ts-errors",
-            "vscode-string-converter-pro"
+            "vscode-string-converter-pro",
+            "vscode-experimental-codesnap"
         ],
         "skipTesting": [
             "vscode-keybindings"
