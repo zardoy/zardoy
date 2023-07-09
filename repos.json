@@ -68,7 +68,8 @@
             "vscode-extend",
             "vscode-disable-ts-errors",
             "vscode-string-converter-pro",
-            "vscode-experimental-codesnap"
+            "vscode-experimental-codesnap",
+            "vscode-custom-patches"
         ],
         "skipTesting": [
             "vscode-keybindings"
