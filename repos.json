@@ -69,7 +69,8 @@
             "vscode-disable-ts-errors",
             "vscode-string-converter-pro",
             "vscode-experimental-codesnap",
-            "vscode-custom-patches"
+            "vscode-custom-patches",
+            "vscode-inline-debugger"
         ],
         "skipTesting": [
             "vscode-keybindings"
