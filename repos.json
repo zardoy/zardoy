@@ -24,7 +24,8 @@
             "vscode-better-snippets",
             "rename-repos",
             "vscode-icons-ts",
-            "ps3-game-updater"
+            "ps3-game-updater",
+            "minecraft-web-client-proxy"
         ]
     },
     "electron-apps": {
