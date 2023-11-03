@@ -71,7 +71,8 @@
             "vscode-string-converter-pro",
             "vscode-experimental-codesnap",
             "vscode-custom-patches",
-            "vscode-inline-debugger"
+            "vscode-inline-debugger",
+            "vscode-no-windows-slashes"
         ],
         "skipTesting": [
             "vscode-keybindings"
