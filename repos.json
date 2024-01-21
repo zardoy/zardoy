@@ -25,7 +25,8 @@
             "rename-repos",
             "vscode-icons-ts",
             "ps3-game-updater",
-            "minecraft-web-client-proxy"
+            "minecraft-web-client-proxy",
+            "space-squid"
         ]
     },
     "electron-apps": {
