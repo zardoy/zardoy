@@ -26,7 +26,8 @@
             "vscode-icons-ts",
             "ps3-game-updater",
             "minecraft-web-client-proxy",
-            "space-squid"
+            "space-squid",
+            "typescript-vscode-plugins"
         ]
     },
     "electron-apps": {
