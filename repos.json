@@ -27,7 +27,8 @@
             "ps3-game-updater",
             "minecraft-web-client-proxy",
             "space-squid",
-            "typescript-vscode-plugins"
+            "typescript-vscode-plugins",
+            "contro-max"
         ]
     },
     "electron-apps": {
