@@ -28,7 +28,8 @@
             "minecraft-web-client-proxy",
             "space-squid",
             "typescript-vscode-plugins",
-            "contro-max"
+            "contro-max",
+            "prismarine-web-client"
         ]
     },
     "electron-apps": {
