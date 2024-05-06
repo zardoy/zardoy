@@ -29,7 +29,8 @@
             "space-squid",
             "typescript-vscode-plugins",
             "contro-max",
-            "prismarine-web-client"
+            "prismarine-web-client",
+            "electron-window-keeper"
         ]
     },
     "electron-apps": {
