@@ -30,7 +30,8 @@
             "typescript-vscode-plugins",
             "contro-max",
             "prismarine-web-client",
-            "electron-window-keeper"
+            "electron-window-keeper",
+            "mc-assets"
         ]
     },
     "electron-apps": {
