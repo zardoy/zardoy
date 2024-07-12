@@ -1,6 +1,4 @@
-VSCode Extensions!!
-
-In an endless journey to make DX even better!
+In an endless journey to make DX even better! Love making web games at scale and VSCode Extensions & plugins!
 
 Best extensions of mine:
 
@@ -15,7 +13,7 @@ Best extensions of mine:
 - [Extra Commands](https://github.com/zardoy/extra-commands) contains commands that should be builtin
 - [GitHub Manager](https://github.com/zardoy/github-manager) to quickly switch between cloned repos via `owner/name` search
 - [Vetur Extended](https://github.com/zardoy/vetur-extended) (for Vetur/Volar) simple code completion, go to reference from template
-- [Extended Extensions](https://github.com/zardoy/vscode-patches) - experimental extensions that give new possibilites!
+- [Extended Extensions](https://github.com/zardoy/vscode-patches) - experimental extensions that give new possibilities!
 
 ... and even more
 
