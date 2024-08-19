@@ -31,7 +31,8 @@
             "contro-max",
             "prismarine-web-client",
             "electron-window-keeper",
-            "mc-assets"
+            "mc-assets",
+            "web3-utils"
         ]
     },
     "electron-apps": {
