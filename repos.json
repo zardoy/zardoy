@@ -32,7 +32,8 @@
             "prismarine-web-client",
             "electron-window-keeper",
             "mc-assets",
-            "web3-utils"
+            "web3-utils",
+            "release-testing"
         ]
     },
     "electron-apps": {
