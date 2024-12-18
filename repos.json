@@ -33,7 +33,8 @@
             "electron-window-keeper",
             "mc-assets",
             "web3-utils",
-            "release-testing"
+            "release-testing",
+            "mcraft-fun-mineflayer-plugin"
         ]
     },
     "electron-apps": {
