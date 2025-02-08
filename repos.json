@@ -34,7 +34,8 @@
             "mc-assets",
             "web3-utils",
             "release-testing",
-            "mcraft-fun-mineflayer-plugin"
+            "mcraft-fun-mineflayer-plugin",
+            "minecraft-lighting"
         ]
     },
     "electron-apps": {
