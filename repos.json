@@ -35,7 +35,8 @@
             "web3-utils",
             "release-testing",
             "mcraft-fun-mineflayer-plugin",
-            "minecraft-lighting"
+            "minecraft-lighting",
+            "mineflayer-mouse"
         ]
     },
     "electron-apps": {
