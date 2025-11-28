@@ -37,7 +37,8 @@
             "mcraft-fun-mineflayer-plugin",
             "minecraft-lighting",
             "mineflayer-mouse",
-            "mc-bridge"
+            "mc-bridge",
+            "minecraft-renderer"
         ]
     },
     "electron-apps": {
