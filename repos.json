@@ -38,7 +38,8 @@
             "minecraft-lighting",
             "mineflayer-mouse",
             "mc-bridge",
-            "minecraft-renderer"
+            "minecraft-renderer",
+            "mwc-proxy"
         ]
     },
     "electron-apps": {
